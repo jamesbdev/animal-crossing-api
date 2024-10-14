@@ -1,0 +1,52 @@
+main {
+    background: url("./assets/animal-crossing-bg.jpg") no-repeat;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.card-container {
+    background: url("./assets/animal-crossing-wood-bg.png") no-repeat;
+    height: 80vh;
+    width: 412px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.villager-image {
+    border-radius: 50%;
+    background: white;
+    padding: 20px;
+    display: inline;
+    position: absolute;
+    top: -40px;
+    left: 45%;
+}
+
+.chat-bubble {
+    height: auto;
+    width: 100%;
+    margin-top: 37px;
+}
+
+.quote {
+    position: relative;
+    top: -79px;
+    left: 0;
+}

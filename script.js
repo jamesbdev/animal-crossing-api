@@ -28,7 +28,20 @@ const getRandomVillager = async () => {
 
         const json = await response.json();
         const villagerNumber = makeRandNumber(json.length);
-        console.log(json[villagerNumber]);
+        const villager = json[villagerNumber];
+        console.log("villager", villager);
+
+        //change the HTML 
+
+        const villagerImage = document.querySelector(".villager-image");
+        const quote = document.querySelector(".quote");
+        //change image
+        villagerImage.src = villager.image_url;
+        //change quote 
+        quote.innerHTML = villager.quote;
+
+          
+
       
     } catch (error) {
       console.log(error.message);
@@ -37,6 +50,9 @@ const getRandomVillager = async () => {
 }
 
 getRandomVillager();
+
+
+
 
 
 

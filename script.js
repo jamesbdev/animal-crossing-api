@@ -1,5 +1,5 @@
 
-const apiKey = "c75ac129-2650-4330-b9b4-5f37a7df4330";
+import apiKey from "./utility";
 
 //fetch data about single random Animal Crossing villager
 

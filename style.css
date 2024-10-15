@@ -29,6 +29,18 @@ body {
     position: relative;
 }
 
+h2 {
+    font-size: 1rem;
+    background-color: orange;
+    color: black;
+    position: absolute;
+    padding: 0.5rem;
+    transform: rotate(-30deg);
+    left: 1.5rem;
+    top: -1.2rem;
+    border-radius: 1rem;
+}
+
 .villager-image {
     border-radius: 50%;
     background: white;
@@ -42,11 +54,16 @@ body {
 .chat-bubble {
     height: auto;
     width: 100%;
-    margin-top: 37px;
+    /* margin-top: 37px; */
 }
 
 .quote {
     position: relative;
     top: -79px;
     left: 0;
+}
+
+.chat-container {
+  position: relative;
+  margin-top: 3rem;
 }

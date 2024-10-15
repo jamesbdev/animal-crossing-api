@@ -1,5 +1,5 @@
 
-import apiKey from "./utility";
+import apiKey from "./utility.js";
 
 //fetch data about single random Animal Crossing villager
 
@@ -35,10 +35,14 @@ const getRandomVillager = async () => {
 
         const villagerImage = document.querySelector(".villager-image");
         const quote = document.querySelector(".quote");
+        const name = document.querySelector(".name");
+
         //change image
         villagerImage.src = villager.image_url;
         //change quote 
         quote.innerHTML = villager.quote;
+        //change name
+        name.innerHTML = villager.name;
 
           
 

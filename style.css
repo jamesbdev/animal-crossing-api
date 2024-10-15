@@ -49,12 +49,12 @@ h2 {
     position: absolute;
     top: -40px;
     left: 45%;
+    border: 2px solid #89cff0;
 }
 
 .chat-bubble {
     height: auto;
     width: 100%;
-    /* margin-top: 37px; */
 }
 
 .quote {
@@ -66,4 +66,24 @@ h2 {
 .chat-container {
   position: relative;
   margin-top: 3rem;
+}
+
+.info-block {
+    display: flex;
+}
+
+.species-container {
+    background-color: #ffa500;
+}
+
+.personality-container {
+    background-color: #107896;
+}
+
+.hobby-container {
+    background-color: #9a2617;
+}
+
+.birthday-container {
+    background-color: #829356;
 }

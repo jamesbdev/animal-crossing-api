@@ -36,6 +36,7 @@ const getRandomVillager = async () => {
         const villagerImage = document.querySelector(".villager-image");
         const quote = document.querySelector(".quote");
         const name = document.querySelector(".name");
+        const species = document.querySelector(".species");
 
         //change image
         villagerImage.src = villager.image_url;
@@ -43,8 +44,8 @@ const getRandomVillager = async () => {
         quote.innerHTML = villager.quote;
         //change name
         name.innerHTML = villager.name;
-
-          
+        //change species
+        species.innerHTML = villager.species;
 
       
     } catch (error) {

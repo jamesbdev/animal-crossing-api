@@ -47,6 +47,9 @@ const getRandomVillager = async () => {
         const personalityInfo = document.createElement("span");
         personalityInfo.innerHTML = villager.personality;
 
+        const birthdayInfo = document.createElement("span");
+        birthdayInfo.innerHTML = `${villager.birthday_month} ${villager.birthday_day}`;
+
 
         //change image
         villagerImage.src = villager.image_url;
@@ -65,9 +68,7 @@ const getRandomVillager = async () => {
             console.log(villager.hobby);
         }
         //change birthday
-        birthday.innerHTML = `${villager.birthday_month} ${villager.birthday_day}`;
-      
-
+        birthday.insertAdjacentElement("beforeend", birthdayInfo);
       
     } catch (error) {
       console.log(error.message);

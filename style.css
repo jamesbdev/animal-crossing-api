@@ -17,7 +17,7 @@ body {
 
 
 .card-container {
-    background: url("./assets/animal-crossing-wood-bg.png") no-repeat;
+    background: url("./assets/animal-crossing-wood-bg.png");
     height: 80vh;
     width: 412px;
     margin: 0 auto;
@@ -50,9 +50,10 @@ h2 {
     display: inline;
     position: absolute;
     top: -40px;
-    left: 45%;
+    left: 40%;
     border-width: 2px;
     border-style: solid;
+    z-index: 10;
     box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -95,6 +96,7 @@ h2 {
 .species-container {
     background-color: #ffa500;
     border-color: #ae7304;
+    width: 1;
 }
 
 .info-block span {
@@ -131,9 +133,12 @@ h2 {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    width: 90%;
 }
 
 h3 {
     font-weight: normal;
     font-size: 1rem;
+    flex-basis: 33%;
+    display: block;
 }

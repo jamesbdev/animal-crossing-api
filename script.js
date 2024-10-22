@@ -40,6 +40,7 @@ const getRandomVillager = async () => {
         const personality = document.querySelector(".personality");
         const hobby = document.querySelector(".hobby");
         const birthday = document.querySelector(".birthday");
+        
 
         const speciesInfo = document.createElement("span");
         speciesInfo.innerHTML = villager.species;
@@ -53,6 +54,14 @@ const getRandomVillager = async () => {
 
         //change image
         villagerImage.src = villager.image_url;
+        //add a border colour depending on villager's gender
+        if (villager.gender === "Male") {
+            //add border colour
+            villagerImage.classList.add("border-blue");
+        } else {
+            villagerImage.classList.add("border-pink");
+        }
+   
         //change quote 
         quote.innerHTML = villager.quote;
         //change name
@@ -66,6 +75,9 @@ const getRandomVillager = async () => {
           hobby.innerHTML = villager.hobby;
         } else {
             console.log(villager.hobby);
+            const hobbyContainer = document.querySelector(".hobby-container");
+            //hide hobby section if there are no hobbies
+            hobbyContainer.style.display = "none";
         }
         //change birthday
         birthday.insertAdjacentElement("beforeend", birthdayInfo);

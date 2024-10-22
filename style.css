@@ -27,6 +27,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     position: relative;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -50,6 +52,7 @@ h2 {
     top: -40px;
     left: 45%;
     border: 2px solid #89cff0;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .chat-bubble {
@@ -70,20 +73,50 @@ h2 {
 
 .info-block {
     display: flex;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    border-width: 3px;
+    border-style: solid;
+    width: 1;
 }
 
 .species-container {
     background-color: #ffa500;
+    border-color: #ae7304;
+}
+
+.info-block span {
+    background: white;
+    color: black;
 }
 
 .personality-container {
     background-color: #107896;
+    border-color: #0c5e75;
 }
 
 .hobby-container {
     background-color: #9a2617;
+    border-color: #7f1d10;
 }
 
 .birthday-container {
     background-color: #829356;
+    border-color: #5f6b40;
+}
+
+.species, .personality {
+    background: white;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

@@ -37,6 +37,16 @@ const getRandomVillager = async () => {
         const quote = document.querySelector(".quote");
         const name = document.querySelector(".name");
         const species = document.querySelector(".species");
+        const personality = document.querySelector(".personality");
+        const hobby = document.querySelector(".hobby");
+        const birthday = document.querySelector(".birthday");
+
+        const speciesInfo = document.createElement("span");
+        speciesInfo.innerHTML = villager.species;
+
+        const personalityInfo = document.createElement("span");
+        personalityInfo.innerHTML = villager.personality;
+
 
         //change image
         villagerImage.src = villager.image_url;
@@ -45,7 +55,18 @@ const getRandomVillager = async () => {
         //change name
         name.innerHTML = villager.name;
         //change species
-        species.innerHTML = villager.species;
+        species.insertAdjacentElement("beforeend", speciesInfo);
+        //change personality
+        personality.insertAdjacentElement("beforeend", personalityInfo);
+        //change hobby
+        if (villager.hobby) {
+          hobby.innerHTML = villager.hobby;
+        } else {
+            console.log(villager.hobby);
+        }
+        //change birthday
+        birthday.innerHTML = `${villager.birthday_month} ${villager.birthday_day}`;
+      
 
       
     } catch (error) {

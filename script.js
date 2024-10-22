@@ -40,6 +40,9 @@ const getRandomVillager = async () => {
         const personality = document.querySelector(".personality");
         const hobby = document.querySelector(".hobby");
         const birthday = document.querySelector(".birthday");
+        const textColor = villager.text_color;
+        const titleColor = villager.title_color;
+
         
 
         const speciesInfo = document.createElement("span");
@@ -81,6 +84,16 @@ const getRandomVillager = async () => {
         }
         //change birthday
         birthday.insertAdjacentElement("beforeend", birthdayInfo);
+
+        //change title colour
+        if (textColor && titleColor) {
+            name.style.color = `#${titleColor}`;
+            name.style.backgroundColor = `#${textColor}`;
+        } else {
+            console.log("textColour", textColor);
+            console.log(titleColor);
+        }
+       
       
     } catch (error) {
       console.log(error.message);

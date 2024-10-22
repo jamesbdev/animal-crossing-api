@@ -87,14 +87,12 @@ const getRandomVillager = async () => {
 
         //change title colour
         if (textColor && titleColor) {
-            name.style.color = `#${titleColor}`;
-            name.style.backgroundColor = `#${textColor}`;
+            name.style.color = `#${textColor}`;
+            name.style.backgroundColor = `#${titleColor}`;
         } else {
             console.log("textColour", textColor);
             console.log(titleColor);
-        }
-       
-      
+        } 
     } catch (error) {
       console.log(error.message);
     
